@@ -1,0 +1,577 @@
+* {
+  font-family: 'Castoro', serif;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  font-style: italic;
+  font-size: xx-large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 3em;
+  position: relative;
+  line-height: 35px;
+}
+
+h4 {
+  color: grey;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+
+.jumbotron {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  overflow: auto;
+}
+
+.jumbotron figure {
+  content: 'display : float';
+}
+
+aside {
+  position: relative;
+  top: 50%;
+  margin-top: -70rem;
+  width: 20%;
+  float: right;
+  margin-right: 4rem;
+}
+
+aside section {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.footerMenu {
+  display: flex;
+  justify-content: center;
+}
+
+.footerMenu a {
+  font-size: x-small;
+  margin-bottom: 2rem;
+  color: #000;
+  transition: opacity 0.4s;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.links a {
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+  color: #000;
+  transition: opacity 0.3s;
+}
+
+.subscription a {
+  color: #567b95;
+  transition: opacity 0.3s;
+}
+
+.footerMenu a:hover {
+  opacity: 60%;
+  text-decoration: underline;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+
+article section {
+  flex-basis: 60%;
+}
+
+article aside {
+  flex-basis: 30%;
+}
+
+article span {
+  position: relative;
+  top: 10px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.links section {
+  padding: 1rem;
+}
+
+.links section h4 {
+  font-weight: bold;
+  color: #000;
+}
+
+.links a:hover {
+  opacity: 60%;
+  text-decoration: underline;
+}
+
+.subscription a:hover {
+  opacity: 70%;
+}
+
+.usefullLinks {
+  display: flex;
+  justify-content: center;
+  padding-left: 30px;
+  margin: 0 auto;
+}
+
+.usefullLinks img {
+  width: 180px;
+}
+
+.usefullLinks section {
+  margin-right: 1rem;
+}
+
+#editorsPick a {
+  color: #000;
+  font-size: medium;
+  transition: opacity 0.3s;
+}
+
+#editorsPick a:hover {
+  opacity: 70%;
+  text-decoration: underline;
+}
+
+#editorsPick img {
+  width: 80px;
+  padding: 0.5rem;
+  float: left;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.topIcon {
+  width: 18px;
+  padding: 0.5rem;
+}
+
+.topCategory {
+  position: absolute;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  padding: 0.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.topCategory:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.logo {
+  width: 250px;
+  padding-top: 5px;
+}
+
+.topButton {
+  background-color: #567b95;
+  border: none;
+  color: #fff;
+  padding: 8px;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: background-color 0.4s;
+  position: relative;
+  top: 5px;
+}
+
+.topButton:hover {
+  cursor: pointer;
+  background-color: #759cb8;
+}
+
+footer hr {
+  border: 1px solid #000;
+}
+
+.credit {
+  font-size: small;
+  margin: 0;
+}
+
+.credit span {
+  color: grey;
+  margin: 0;
+  padding-top: -10px;
+}
+
+.author {
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.author:hover {
+  text-decoration: underline;
+  color: rgb(29, 29, 29);
+}
+
+.articleWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  height: 40px;
+}
+
+.icons {
+  background-color: #eee;
+  margin: 5px;
+  padding: 8px 10px;
+  border-radius: 50%;
+  transition: background-color 0.4s;
+  border: 1px solid #eee;
+  position: relative;
+}
+
+.icons:hover {
+  background-color: rgb(206, 206, 206);
+  border: 1px solid rgb(129, 129, 129);
+}
+
+.social .iconsImg {
+  width: 17px;
+  position: relative;
+  left: 1px;
+  top: 3px;
+}
+
+.curvedArrow {
+  transform: rotate(100deg);
+}
+
+#bookmark {
+  position: relative;
+  top: 8px;
+  width: 25px;
+  transition: opacity 0.2s;
+}
+
+#bookmark:hover {
+  opacity: 50%;
+}
+
+#chat {
+  position: relative;
+  top: 8px;
+  width: 25px;
+  transition: opacity 0.2s;
+}
+
+#chat:hover {
+  opacity: 25%;
+}
+
+.subscription {
+  text-align: center;
+  font-size: medium;
+}
+
+.subscription hr {
+  color: grey;
+  width: 80px;
+  border: 1px solid rgb(182, 182, 182);
+}
+
+.randomLinks {
+  color: rgb(122, 122, 122);
+  transition: opacity 0.2s;
+}
+
+.randomLinks:hover {
+  opacity: 70%;
+  text-decoration: underline;
+}
+
+.theory {
+  display: block;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.theoryWrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 0.2rem;
+  width: 100%;
+}
+
+.theoryImage {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.imageText {
+  font-size: 80%;
+  position: relative;
+  top: 128px;
+  margin-bottom: 125px;
+  z-index: 10;
+  line-height: 18px;
+}
+
+.imageText span {
+  font-weight: bold;
+}
+
+.jumbo {
+  display: flex;
+  justify-content: center;
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.columnOne {
+  margin-right: 10px;
+}
+
+.wrapperTitle {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bolder;
+}
+
+#showing {
+  color: grey;
+  transition: opacity 0.3s;
+}
+
+#showing:hover {
+  opacity: 80%;
+}
+
+.wrapperOneContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.card {
+  border: 1px solid grey;
+  max-width: 280px;
+  padding: 10px;
+  position: relative;
+  margin: 10px;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 10px 1px grey;
+  cursor: pointer;
+}
+
+.cardPara {
+  font-size: smaller;
+  margin-bottom: 0;
+}
+
+.cardNews {
+  margin: 0;
+  color: #000;
+}
+
+.cardImage {
+  width: 100px;
+}
+
+.btn {
+  border-radius: 0.5em;
+  background-color: #567b95;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  transition: background 0.3s;
+  margin: 1rem;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #7aa1bd;
+}
+
+.info {
+  color: #fff;
+}
+
+.articleFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardFooter {
+  color: #567b95;
+  font-weight: bold;
+}
+
+.cardFooter:hover {
+  text-decoration: underline;
+}
+
+.plusIcon {
+  border: 2px solid #000;
+  padding: 3px 10px 3px 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+  position: relative;
+  top: -70px;
+  left: 130px;
+}
+
+.plusIcon:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+#extraTitle {
+  margin-right: 100px;
+  color: #000;
+  transition: opacity 0.3s;
+}
+
+#extraTitle:hover {
+  opacity: 70%;
+  text-decoration: underline;
+}
+
+.gridSystem {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gridCard {
+  max-width: 280px;
+  margin-bottom: 20px;
+}
+
+.gridCaption {
+  color: grey;
+  font-size: xx-small;
+  letter-spacing: 0.1rem;
+  margin: 0;
+}
+
+.gridImage {
+  width: 280px;
+  height: auto;
+}
+
+.gridTitle {
+  color: #000;
+  transition: opacity 0.2s;
+  font-weight: 600;
+}
+
+.gridTitle:hover {
+  opacity: 70%;
+}
+
+.wrapperFour {
+  max-width: 257px;
+}
+
+.wrapperFour hr {
+  border: 1px solid rgb(196, 196, 196);
+}
+
+/* Usefull links */
+.horizontalRow {
+  margin: 0 250px 0 250px;
+}
+
+.usefullHeader {
+  width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.homepage {
+  color: #000;
+  order: 1;
+  transition: opacity 0.4s;
+}
+
+.homepage:hover {
+  opacity: 70%;
+  text-decoration: underline;
+}
+
+.list {
+  color: #000;
+  font-weight: 700;
+  transition: opacity 0.5s;
+  font-size: large;
+  margin: 20px 0;
+}
+
+.list:hover {
+  opacity: 60%;
+}
